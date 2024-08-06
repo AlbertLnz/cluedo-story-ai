@@ -17,11 +17,8 @@ const StoryArea = ({ game }: Props) => {
     }
   }, [userShowStory, game])
 
-  console.log(showData)
-  console.log(userShowStory)
-
   return (
-    <div className="border-2 border-indigo-500/60 rounded-lg p-8 relative w-full h-72">
+    <div className="border-2 border-indigo-500/60 rounded-lg p-8 relative w-full h-72 bg-slate-300 z-auto">
       <p className="text-center leading-relaxed">{showData}</p>
       <ShowConclusionContainer />
     </div>

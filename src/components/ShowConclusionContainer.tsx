@@ -18,7 +18,7 @@ const ShowConclusionContainer = () => {
     <div
       className={`flex flex-col absolute top-0 right-0 space-y-4 transition-transform duration-300 ease-in-out ${
         userSelectedCharacter ? 'translate-x-12' : 'translate-x-0'
-      }`}
+      } -z-10`}
     >
       <button
         className={`border border-violet-600 rounded-full cursor-pointer ${
