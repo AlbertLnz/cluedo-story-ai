@@ -1,23 +1,12 @@
-import { useState } from 'react'
-
 type Props = {
   characterName: string
   className: string
-  characterSelected: (characterName: string) => void
+  onClick: () => void
 }
 
-const CharacterButton = ({
-  characterName,
-  className,
-  characterSelected,
-}: Props) => {
-  const [resultColor, setResultColor] = useState<undefined | string>()
-
+const CharacterButton = ({ characterName, className, onClick }: Props) => {
   return (
-    <button
-      className={`${className} bg-[${resultColor}] px-2 py-0.5 rounded-lg`}
-      onClick={() => characterSelected(characterName)}
-    >
+    <button className={`${className} px-2 py-0.5 rounded-lg`} onClick={onClick}>
       {characterName}
     </button>
   )
