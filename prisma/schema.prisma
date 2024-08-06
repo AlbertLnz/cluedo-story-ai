@@ -9,6 +9,17 @@ generator client {
 }
 
 datasource db {
-  provider = "postgresql"
-  url      = env("DATABASE_URL")
+  provider = "sqlite"
+  url      = "file:./game.db"
+}
+
+model Game {
+  id                 String   @id @default(cuid())
+  history            String
+  solution           String
+  characters         String
+  impostor_character String
+  language           String
+  createdAt          DateTime @default(now())
+  updatedAt          DateTime @updatedAt
 }
