@@ -5,5 +5,5 @@ export interface Game {
   solution: string
   characters: string
   impostor_character: string
-  language: Language
+  language: Language | string // 'string' bcs SQLite doesn't support Enum
 }
