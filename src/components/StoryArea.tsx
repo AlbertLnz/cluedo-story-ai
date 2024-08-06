@@ -21,7 +21,11 @@ const StoryArea = () => {
     getStoryOfBBDD()
   }, [])
 
-  return <div>{story?.history}</div>
+  return (
+    <div className="border-2 border-indigo-500/60 rounded-lg p-8">
+      <p className="text-center leading-relaxed">{story?.history}</p>
+    </div>
+  )
 }
 
 export default StoryArea

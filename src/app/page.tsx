@@ -1,11 +1,11 @@
 'use client'
 
-import StoryArea from '@/components/StoryArea'
+import Content from './sections/Content'
 
 export default function Home() {
   return (
-    <main>
-      <StoryArea />
+    <main className="flex flex-col max-w-4xl mx-auto items-center">
+      <Content />
     </main>
   )
 }
