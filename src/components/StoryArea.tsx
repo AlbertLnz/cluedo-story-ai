@@ -1,4 +1,5 @@
 import { useUserInteractions } from '@/store/store'
+import '@/styles/story_area.css'
 import { Game } from '@/types/games'
 import { useEffect, useState } from 'react'
 import ShowConclusionContainer from './ShowConclusionContainer'
@@ -18,7 +19,10 @@ const StoryArea = ({ game }: Props) => {
   }, [userShowStory, game])
 
   return (
-    <div className='border-2 border-indigo-500/60 rounded-lg p-8 relative w-full h-72 bg-[#222222] z-auto'>
+    <div
+      id='story-container'
+      className='border-2 border-indigo-500/60 rounded-lg p-4 relative w-full h-72 bg-[#222222] z-auto overflow-y-auto'
+    >
       <p className='text-center leading-relaxed text-balance'>{showData}</p>
       <ShowConclusionContainer />
     </div>
