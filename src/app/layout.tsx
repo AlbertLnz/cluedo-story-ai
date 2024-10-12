@@ -18,7 +18,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
+    <html lang='en'>
       <body
         className={`${inter.className} h-screen flex flex-col justify-between bg-[#111419] text-white`}
       >

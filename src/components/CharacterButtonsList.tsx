@@ -41,7 +41,7 @@ const ButtonsList = () => {
   return (
     <div>
       {game && (
-        <div className="pt-4 space-x-8">
+        <div className='pt-4 space-x-8'>
           {charactersArray.slice(0, 4).map((character, index) => (
             <CharacterButton
               key={index}

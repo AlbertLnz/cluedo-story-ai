@@ -27,11 +27,11 @@ const ShowConclusionContainer = () => {
         onClick={() => setUserShowStory(true)}
       >
         <Image
-          src="/story_icon.webp"
-          alt="story"
+          src='/story_icon.webp'
+          alt='story'
           width={30}
           height={30}
-          className="p-1"
+          className='p-1'
         />
       </button>
       <button
@@ -41,23 +41,23 @@ const ShowConclusionContainer = () => {
         onClick={() => setUserShowStory(false)}
       >
         <Image
-          src="/conclusion_icon.png"
-          alt="conclusion"
+          src='/conclusion_icon.png'
+          alt='conclusion'
           width={30}
           height={30}
-          className="p-1"
+          className='p-1'
         />
       </button>
       <button
-        className="bg-white border border-violet-600 rounded-lg cursor-pointer"
+        className='bg-white border border-violet-600 rounded-lg cursor-pointer'
         onClick={handleResetApp}
       >
         <Image
-          src="/reset_icon.png"
-          alt="reset"
+          src='/reset_icon.png'
+          alt='reset'
           width={30}
           height={30}
-          className="p-1"
+          className='p-1'
         />
       </button>
     </div>

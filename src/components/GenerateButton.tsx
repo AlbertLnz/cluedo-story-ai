@@ -24,8 +24,8 @@ const GenerateButton = ({ icon, text, className, action }: Props) => {
       className={`${className} flex border-2 rounded-xl items-center justify-center px-8 py-0.5 bg-[#181618] text-md font-semibold text-lg`}
       onClick={() => handleAction(action)}
     >
-      <Image src={icon} alt={text} width={50} height={50} className="p-2" />
-      <p className="ml-2">{text}</p>
+      <Image src={icon} alt={text} width={50} height={50} className='p-2' />
+      <p className='ml-2'>{text}</p>
     </button>
   )
 }
