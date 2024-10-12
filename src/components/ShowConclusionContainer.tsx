@@ -17,20 +17,26 @@ const ShowConclusionContainer = () => {
   return (
     <div
       className={`flex flex-col absolute top-0 right-0 space-y-4 transition-transform duration-300 ease-in-out ${
-        userSelectedCharacter ? 'translate-x-12' : 'translate-x-0'
+        userSelectedCharacter ? 'translate-x-12 z-10' : 'translate-x-0'
       } -z-10`}
     >
       <button
-        className={`border border-violet-600 rounded-full cursor-pointer ${
-          userShowStory ? 'bg-yellow-300' : ''
+        className={`border border-violet-600 bg-yellow-300 rounded-lg cursor-pointer ${
+          userShowStory ? 'bg-orange-400' : ''
         }`}
         onClick={() => setUserShowStory(true)}
       >
-        <Image src="/story_icon.webp" alt="story" width={30} height={30} />
+        <Image
+          src="/story_icon.webp"
+          alt="story"
+          width={30}
+          height={30}
+          className="p-1"
+        />
       </button>
       <button
-        className={`border border-violet-600 rounded-full cursor-pointer ${
-          userShowStory ? '' : 'bg-yellow-300'
+        className={`border border-violet-600 bg-yellow-300 rounded-lg cursor-pointer ${
+          userShowStory ? '' : 'bg-orange-400'
         }`}
         onClick={() => setUserShowStory(false)}
       >
@@ -39,13 +45,20 @@ const ShowConclusionContainer = () => {
           alt="conclusion"
           width={30}
           height={30}
+          className="p-1"
         />
       </button>
       <button
-        className="bg-white border border-violet-600 rounded-full cursor-pointer"
+        className="bg-white border border-violet-600 rounded-lg cursor-pointer"
         onClick={handleResetApp}
       >
-        <Image src="/reset_icon.png" alt="reset" width={30} height={30} />
+        <Image
+          src="/reset_icon.png"
+          alt="reset"
+          width={30}
+          height={30}
+          className="p-1"
+        />
       </button>
     </div>
   )

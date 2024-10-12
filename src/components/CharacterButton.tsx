@@ -6,7 +6,10 @@ type Props = {
 
 const CharacterButton = ({ characterName, className, onClick }: Props) => {
   return (
-    <button className={`${className} px-2 py-0.5 rounded-lg`} onClick={onClick}>
+    <button
+      className={`${className} px-6 py-1 rounded-lg text-lg`}
+      onClick={onClick}
+    >
       {characterName}
     </button>
   )

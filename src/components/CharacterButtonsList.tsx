@@ -24,12 +24,12 @@ const ButtonsList = () => {
 
   const getButtonColor = (character: string) => {
     if (characterSelected === undefined) {
-      return 'bg-gray-500'
+      return 'bg-[#553AB8]'
     }
 
     return character === game?.impostor_character
-      ? 'bg-green-500'
-      : 'bg-red-500'
+      ? 'bg-[#25A954]'
+      : 'bg-[#E31D65]'
   }
 
   useEffect(() => {

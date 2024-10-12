@@ -35,7 +35,7 @@ const games: Game[] = [
     solution:
       "The impostor is Colonel Mustard. The key detail is the candlestick found beside the body. Colonel Mustard claimed he was in the kitchen, but if he were truly in the kitchen, he would have used a knife or some other kitchen utensil. The candlestick, a common object in the library, indicates that the impostor must have been in or near the library, not the kitchen. Therefore, Colonel Mustard's alibi doesn't hold up, making him the likely culprit.",
     characters: 'Professor Plum, Miss Scarlet, Colonel Mustard, Mrs. Peacock.',
-    impostor_character: 'Colonel Mustard.',
+    impostor_character: 'Colonel Mustard',
     language: 'en',
   },
   {
